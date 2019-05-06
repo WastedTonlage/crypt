@@ -32,8 +32,15 @@ header {
   color: white;
 }
 
-nav {
+#nav1{
   float: left;
+  width: 10%;
+  height: 80%; 
+  background: #3D9EFF;
+  padding: 20px;
+}
+#nav2{
+  float: right;
   width: 10%;
   height: 80%; 
   background: #3D9EFF;
@@ -84,7 +91,7 @@ float: right;
     width: 33%;        
         }
 #Table1{
-         width: 90%;
+         width: 80%;
         }
 #div1{
     
@@ -116,13 +123,15 @@ float: right;
 </header>
 
 <section>
-  <nav>
+  <nav id="nav1">
     <ul id="menu">
         <input type="radio" class="algoritmer" value="Rot13"> Rot13<br>
         <input type="radio" class="algoritmer" value="Rsa"> RSA<br>
         <input type="radio" class="algoritmer" value="Aes"> AES<br>
         
     </ul>
+  </nav>
+     <nav id="nav2">
   </nav>
     <table id="Table1">
         <td id="t1">
