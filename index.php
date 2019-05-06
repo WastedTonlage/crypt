@@ -16,7 +16,9 @@
 * {
   box-sizing: border-box;
 }
-
+textarea {
+   resize: none;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -116,7 +118,7 @@ float: right;
 <section>
   <nav>
     <ul id="menu">
-        <input type="radio" class="algoritmer" id="Rot13style" value="Rot13"> Rot13<br>
+        <input type="radio" class="algoritmer" value="Rot13"> Rot13<br>
         <input type="radio" class="algoritmer" value="Rsa"> RSA<br>
         <input type="radio" class="algoritmer" value="Aes"> AES<br>
         
