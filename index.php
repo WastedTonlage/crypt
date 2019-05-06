@@ -4,7 +4,10 @@
         <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script>
+        <script type="text/javascript" src="js/base.js" defer></script>
+        <script type="text/javascript" src="js/algorithms/rot13.js" defer></script>
+        <script type="text/javascript" src="js/algorithms/xor.js" defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -112,21 +115,10 @@ float: right;
 
 <section>
   <nav>
-    <ul>
-        <input type="radio" name="gender" id="Rot13style" value="Rot13"> Rot13<br>
-        <input type="radio" name="gender" value="Rsa"> RSA<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AE<br>
-        <input type="radio" name="gender" value="Aes"> AES<br>
-        <input type="radio" name="gender" value="Aes"> AE<br>
+    <ul id="menu">
+        <input type="radio" class="algoritmer" id="Rot13style" value="Rot13"> Rot13<br>
+        <input type="radio" class="algoritmer" value="Rsa"> RSA<br>
+        <input type="radio" class="algoritmer" value="Aes"> AES<br>
         
     </ul>
   </nav>
@@ -137,8 +129,8 @@ float: right;
     </div>
         </td>
         <td id="t2">
-        <button id="b1">Decrypt</button><br><br><textarea id="t4"></textarea><br><br>
-        <button id="b2">Encrypt</button>
+        <button id="b1" onclick="decClick()">Decrypt</button><br><br><textarea id="t4"></textarea><br><br>
+        <button id="b2" onclick="encClick()">Encrypt</button>
             
         </td>
         <td id="t3">

@@ -1,4 +1,5 @@
-algorithms.push({"Name": "XOR", "Enc": XOREncrypt,"Dec": XOREncrypt})
+algorithms.push({"name": "XOR", "enc": XOREncrypt,"dec": XOREncrypt})
+renderAlgorithms()
 
 function XOREncrypt(plain, key) {
 	for (i=0; i<Math.min(0, plain.length-key.length); i++) {
