@@ -1,1 +1,1 @@
-Dette er et projekt på en Encryption side.
+Dette er et projekt på en Encryption/Decryption side.
