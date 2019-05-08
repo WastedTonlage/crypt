@@ -83,3 +83,18 @@ function BinarytoArray(FadnF){
     }
     return num
 }
+
+function arrayToHex(bitArray) {
+	let total = 0 
+	for (let i = 0; i < bitArray.length; i++) {
+		let bit = bitArray[i]
+		if (bit) {
+			total += Math.pow(16, bitArray.length - i - 1)
+		}
+	}
+	return total
+}
+
+function HexToArray() {
+
+}
