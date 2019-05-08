@@ -23,3 +23,11 @@ function renderAlgorithms() {
 		nav.append('<input type="radio" name="algorithms" class="algoritmer" value="' + i + '">' + algorithms[i].name + '<br>')
 	}
 }
+
+function Arraytobinary(TandF){
+    for(i = 0;i < TandF.length;i++){
+        let Num = TandF[i]
+    }
+    
+    return
+}
