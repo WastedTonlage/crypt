@@ -20,6 +20,6 @@ function renderAlgorithms() {
 	nav.empty()
 	console.log(nav.empty)
 	for (i=0; i<algorithms.length;i++) {
-		nav.append('<input type="radio" class="algoritmer" value="' + i + '">' + algorithms[i].name + '<br>')
+		nav.append('<input type="radio" name="algorithms" class="algoritmer" value="' + i + '">' + algorithms[i].name + '<br>')
 	}
 }
