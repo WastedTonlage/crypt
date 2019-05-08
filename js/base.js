@@ -40,3 +40,21 @@ function bitsToASCII(bitArray) {
 	}
 	return returnString
 }
+
+function ASCIIToBits(ASCIIString) {
+	let bits = []
+	for (i=0; i<ASCIIString.length; i++) {
+		let charCode = ASCIIString[i].charCodeAt()
+		let cc = 128
+		for (p=0; p<8; p++) {
+			if (charCode > cc) {
+				charCode -= cc
+				bits.push(true)
+			} else  {
+				bits.push(false)
+			}
+			cc /= 2
+		}
+	}
+	return bits
+}
