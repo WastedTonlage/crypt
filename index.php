@@ -25,9 +25,7 @@
 <section>
   <nav id="nav1">
     <ul id="menu">
-        <input type="radio" class="algoritmer" value="Rot13"> Rot13<br>
-        <input type="radio" class="algoritmer" value="Rsa"> RSA<br>
-        <input type="radio" class="algoritmer" value="Aes"> AES<br>
+
         
     </ul>
   </nav>
