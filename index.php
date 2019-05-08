@@ -25,7 +25,6 @@
 <section>
   <nav id="nav1">
     <ul id="menu">
-
         
     </ul>
   </nav>
@@ -38,8 +37,27 @@
     </div>
         </td>
         <td id="t2">
-        <button id="b1" onclick="decClick()">Decrypt</button><br><br><textarea id="t4" placeholder="Key"></textarea><br><br>
-        <button id="b2" onclick="encClick()">Encrypt</button>
+        <button id="b1" onclick="decClick()">Decrypt</button><br><br>
+        <button id="b2" onclick="encClick()">Encrypt</button><br><br><textarea id="t4" placeholder="Key"></textarea><br><br>
+        <select id="sel3">
+        <option value="Tal">Tal 0-9</option>
+        <option value="Binary">Binary 0-1</option>
+        <option value="HRX">HEX #FF</option>
+        <option value="ASCII">ASCII</option>
+        </select><br><br>
+        <button id="b3" onclick="genClick()">Genkey</button><br>
+        <select id="sel1">
+        <option value="Tal">Tal 0-9</option>
+        <option value="Binary">Binary 0-1</option>
+        <option value="HRX">HEX #FF</option>
+        <option value="ASCII">ASCII</option>
+        </select>
+        <select id="sel2">
+        <option value="Tal">Tal 0-9</option>
+        <option value="Binary">Binary 0-1</option>
+        <option value="HRX">HEX #FF</option>
+        <option value="ASCII">ASCII</option>
+        </select>
             
         </td>
         <td id="t3">
