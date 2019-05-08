@@ -58,3 +58,27 @@ function ASCIIToBits(ASCIIString) {
 	}
 	return bits
 }
+function Arraytobinary(TandF){
+    let Num = ""
+    for(i = 0;i < TandF.length;i++){
+        let bool = TandF[i]
+        if (bool == true) {
+            Num += "1"
+        } else {
+            Num += "0"
+        }
+    }
+    
+    return Num
+}
+function BinnarytoArray(FadnF){
+    let num = ""
+    for(i = 0;i < FadnF.length;i++){
+        let bool = FadnF[i]
+        if (bool = 1)
+            num += "true"
+        else{
+            num += "false"
+        }
+    }
+}
