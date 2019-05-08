@@ -25,9 +25,15 @@ function renderAlgorithms() {
 }
 
 function Arraytobinary(TandF){
+    let Num = ""
     for(i = 0;i < TandF.length;i++){
-        let Num = TandF[i]
+        let bool = TandF[i]
+        if (bool == true) {
+            Num += "1"
+        } else {
+            Num += "0"
+        }
     }
     
-    return
+    return Num
 }
