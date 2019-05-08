@@ -71,14 +71,15 @@ function Arraytobinary(TandF){
     
     return Num
 }
-function BinnarytoArray(FadnF){
-    let num = ""
+function BinarytoArray(FadnF){
+    let num = []
     for(i = 0;i < FadnF.length;i++){
         let bool = FadnF[i]
-        if (bool = 1)
-            num += "true"
+        if (bool == 1)
+            num.push(true)
         else{
-            num += "false"
+            num.push(false)
         }
     }
+    return num
 }
