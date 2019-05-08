@@ -23,3 +23,20 @@ function renderAlgorithms() {
 		nav.append('<input type="radio" name="algorithms" class="algoritmer" value="' + i + '">' + algorithms[i].name + '<br>')
 	}
 }
+
+function bitsToASCII(bitArray) {
+	let returnString = ""
+	for (i=0; i<bitArray.length; i += 8) {
+		let letter = bitArray.slice(i, i+8)
+		let letterNum = 0
+		let cc = 128
+		for (i=0;i<letter.length;i++) {
+			if (letter[i]) {
+				letterNum += cc
+			}
+			cc /= 2
+		}
+		returnString += String.fromCharCode(letterNum)
+	}
+	return returnString
+}

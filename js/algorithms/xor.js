@@ -1,13 +1,17 @@
-algorithms.push({"name": "XOR", "enc": XOREncrypt,"dec": XOREncrypt})
+algorithms.push({"name": "XOR", "enc": XOREncrypt,"dec": XOREncrypt}, "gen": XORGen)
 renderAlgorithms()
 
 function XOREncrypt(plain, key) {
-	for (i=0; i<Math.min(0, plain.length-key.length); i++) {
+	for (i=0; i<Math.max(0, plain.length-key.length); i++) {
 		key += key[i]
 	}
 	let ciphertext = "";
+	console.log(key)
 	for (i=0; i<plain.length; i++) {
 		ciphertext += plain[i].charCodeAt(0) ^ key[i].charCodeAt(0)
 	}
-	return ciphertext
+}
+
+function XORGen () {
+
 }
