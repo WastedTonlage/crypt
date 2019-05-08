@@ -37,3 +37,15 @@ function Arraytobinary(TandF){
     
     return Num
 }
+function BinnarytoArray(FadnF){
+    let num = ""
+    for(i = 0;i < FadnF.length;i++){
+        let bool = FadnF[i]
+        if (bool = 1)
+            num += "true"
+        else{
+            num += "false"
+        }
+    }
+    
+}
