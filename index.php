@@ -136,17 +136,17 @@ float: right;
     <table id="Table1">
         <td id="t1">
     <div id="div1">
-        <textarea class="Divtext" id="Text1"></textarea>
+        <textarea class="Divtext" id="Text1" placeholder="your text"></textarea>
     </div>
         </td>
         <td id="t2">
-        <button id="b1" onclick="decClick()">Decrypt</button><br><br><textarea id="t4"></textarea><br><br>
+        <button id="b1" onclick="decClick()">Decrypt</button><br><br><textarea id="t4" placeholder="Key"></textarea><br><br>
         <button id="b2" onclick="encClick()">Encrypt</button>
             
         </td>
         <td id="t3">
     <div id="div2">
-        <textarea class="Divtext" id=Text2></textarea>
+        <textarea class="Divtext" id=Text2 placeholder="Not Set the text here"></textarea>
     </div>
         </td>
     </table>
