@@ -1,4 +1,4 @@
-algorithms.push({"name": "Rot13", "enc": rot13encrypt, "dec": rot13decrypt})
+algorithms.push({"name": "Rot13", "enc": rot13encrypt, "dec": rot13decrypt, "gen": rot13gen})
 renderAlgorithms()
 
 
@@ -30,4 +30,8 @@ function rot13encrypt(plain, key) {
 
 function rot13decrypt(cipher, key) {
 	return rot13encrypt(cipher, -key)
+}
+
+function rot13gen() {
+	return Math.ceil(Math.random * 26)
 }
