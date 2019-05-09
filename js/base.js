@@ -84,6 +84,7 @@ function BinarytoArray(FadnF){
     return num
 }
 
+
 function arrayToHex(bitArray) {
 	let total = 0 
 	for (let i = 0; i < bitArray.length; i++) {
@@ -101,5 +102,9 @@ function HexToArray(hexString) {
 		let char = hexString[i]
 		if (hexString)
 	}
+}
+
+function Binarytonumber(Numberb){
+    
 
 }
