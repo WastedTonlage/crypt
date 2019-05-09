@@ -95,6 +95,11 @@ function arrayToHex(bitArray) {
 	return total
 }
 
-function HexToArray() {
+function HexToArray(hexString) {
+	let bitArray = []
+	for (i=0; i<hexString.length; i++) {
+		let char = hexString[i]
+		if (hexString)
+	}
 
 }

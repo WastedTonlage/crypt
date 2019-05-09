@@ -13,5 +13,5 @@ function XOREncrypt(plain, key) {
 }
 
 function XORGen () {
-
+	
 }
