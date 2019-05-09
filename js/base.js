@@ -83,3 +83,6 @@ function BinarytoArray(FadnF){
     }
     return num
 }
+function Binarytonumber(Numberb){
+    
+}
