@@ -17,12 +17,12 @@ header {
   color: white;
 }
 
-#nav1{
-  float: left;
-  width: 10%;
-  height: 80%; 
-  background: #3D9EFF;
-  padding: 20px;
+#nav1 {
+    float: left;
+    width: 10%;
+    height: 80%;
+    background: #3D9EFF;
+    padding: 20px;
 }
 #nav2{
   float: right;
