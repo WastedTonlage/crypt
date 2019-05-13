@@ -114,16 +114,17 @@ function HexToArray(hexString) {
 
 function Binarytonumber(Numberb) {
     let nummer = 0
-    for (i = 0; i < Numberb.length; i++){
+    for (i = 0; i < Numberb.length; i++) {
         let baglens = Numberb.length - i - 1
         let number = Numberb[i]
-        if(number){
-            nummer += Math.pow(2,baglens)
+        if (number) {
+            nummer += Math.pow(2, baglens)
         }
-            
+
     }
     return nummer
 }
+
 function numbertoBinary(BNumber) {
     let startPunkt = 0
     let i = 1
@@ -134,34 +135,33 @@ function numbertoBinary(BNumber) {
         }
         i++
     }
-    for(let j = startPunkt;j >= 1; j = j/2 ){
-        if(j <= BNumber){
+    for (let j = startPunkt; j >= 1; j = j / 2) {
+        if (j <= BNumber) {
             binery.push(true)
             BNumber -= j
-        }else{
+        } else {
             binery.push(false)
         }
-        
+
     }
     return binery
 }
 
 
-function RapperBinarytonumber(){
+function RapperBinarytonumber() {
     console.log("YEH!")
     $("#Text1").val(Binarytonumber(cipherText))
 }
 
 function removeLeadingZeroes(bitArray) {
-	for (i=0; i<bitArray.length; i++) {
-		let bit = bitArray[i]
-		let falses = 0
-		if (!bit) {
-			falses++
-		} else {
-			return bitArray.slice(falses)
-		}
+    for (i = 0; i < bitArray.length; i++) {
+        let bit = bitArray[i]
+        let falses = 0
+        if (!bit) {
+            falses++
+        } else {
+            return bitArray.slice(falses)
+        }
 
-	}
+    }
 }
-
