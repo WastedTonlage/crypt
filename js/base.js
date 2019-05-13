@@ -1,4 +1,7 @@
 let algorithms = []
+let cipherText = []
+let plainText = []
+
 
 function encClick() {
     let algo = $("input.algoritmer:checked").val()
@@ -10,7 +13,6 @@ function decClick() {
     let algo = $("input.algoritmer:checked").val()
     $("#Text1").val(algorithms[algo].dec($("#Text2").val(), $("#t4").val()))
 }
-
 
 
 function renderAlgorithms() {
@@ -133,7 +135,6 @@ function numbertoBinary(BNumber) {
         i++
     }
     for(let j = startPunkt;j >= 1; j = j/2 ){
-        debugger;
         if(j <= BNumber){
             binery.push(true)
             BNumber -= j
@@ -145,17 +146,22 @@ function numbertoBinary(BNumber) {
     return binery
 }
 
+
 function RapperBinarytonumber(){
+    console.log("YEH!")
     $("#Text1").val(Binarytonumber(cipherText))
 }
 
+function removeLeadingZeroes(bitArray) {
+	for (i=0; i<bitArray.length; i++) {
+		let bit = bitArray[i]
+		let falses = 0
+		if (!bit) {
+			falses++
+		} else {
+			return bitArray.slice(falses)
+		}
 
-
-
-
-
-
-
-
-
+	}
+}
 
