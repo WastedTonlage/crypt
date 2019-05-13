@@ -1,4 +1,7 @@
 let algorithms = []
+let cipherText = ""
+let plainText = ""
+
 
 function encClick() {
     let algo = $("input.algoritmer:checked").val()
@@ -10,7 +13,6 @@ function decClick() {
     let algo = $("input.algoritmer:checked").val()
     $("#Text1").val(algorithms[algo].dec($("#Text2").val(), $("#t4").val()))
 }
-
 
 
 function renderAlgorithms() {
@@ -105,18 +107,25 @@ function arrayToHex(bitArray) {
 
 function HexToArray(hexString) {
 	let bitArray = []
-	for (i=0; i<hexString.length; i++) {
-		let char = hexString[i]
-		let number
-		if (char === "A") {
-			number = 10
-		} else if (char === "B") {
-			
-		}
-	}
+	let total = 0
+	total = parseInt(hexString, 16)
+	return numberToBinary(total)
 }
 
 function Binarytonumber(Numberb){
     
 
+}
+
+function removeLeadingZeroes(bitArray) {
+	for (i=0; i<bitArray.length; i++) {
+		let bit = bitArray[i]
+		let falses = 0
+		if (!bit) {
+			falses++
+		} else {
+			return bitArray.slice(falses)
+		}
+
+	}
 }
