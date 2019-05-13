@@ -86,37 +86,74 @@ function BinarytoArray(FadnF) {
     return num
 }
 
-
-function Binarytonumber(Numberb) {
-
-}
-
-
 function arrayToHex(bitArray) {
-	let total = 0 
-	for (let i = 0; i < bitArray.length; i++) {
-		let bit = bitArray[i]
-		if (bit) {
-			total += Math.pow(16, bitArray.length - i - 1)
-		}
-	}
-	return total
+    let total = 0
+    for (let i = 0; i < bitArray.length; i++) {
+        let bit = bitArray[i]
+        if (bit) {
+            total += Math.pow(16, bitArray.length - i - 1)
+        }
+    }
+    return total
 }
 
 function HexToArray(hexString) {
-	let bitArray = []
-	for (i=0; i<hexString.length; i++) {
-		let char = hexString[i]
-		let number
-		if (char === "A") {
-			number = 10
-		} else if (char === "B") {
-			
-		}
-	}
+    let bitArray = []
+    for (i = 0; i < hexString.length; i++) {
+        let char = hexString[i]
+        let number
+        if (char === "A") {
+            number = 10
+        } else if (char === "B") {
+
+        }
+    }
 }
 
-function Binarytonumber(Numberb){
-    
-
+function Binarytonumber(Numberb) {
+    let nummer = 0
+    for (i = 0; i < Numberb.length; i++){
+        let baglens = Numberb.length - i - 1
+        let number = Numberb[i]
+        if(number){
+            nummer += Math.pow(2,baglens)
+        }
+            
+    }
+    return nummer
 }
+function numbertoBinary(BNumber) {
+    let startPunkt = 0
+    let i = 1
+    let binery = []
+    while (startPunkt == 0) {
+        if (Math.pow(2, i) > BNumber) {
+            startPunkt = Math.pow(2, i)
+        }
+        i++
+    }
+    for(let j = startPunkt;j >= 1; j = j/2 ){
+        debugger;
+        if(j <= BNumber){
+            binery.push(true)
+            BNumber -= j
+        }else{
+            binery.push(false)
+        }
+        
+    }
+    return binery
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
