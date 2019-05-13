@@ -1,6 +1,6 @@
 let algorithms = []
-let cipherText = ""
-let plainText = ""
+let cipherText = []
+let plainText = []
 
 
 function encClick() {
