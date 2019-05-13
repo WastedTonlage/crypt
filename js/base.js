@@ -86,6 +86,32 @@ function BinarytoArray(FadnF) {
     return num
 }
 
+
 function Binarytonumber(Numberb) {
+
+}
+
+
+function arrayToHex(bitArray) {
+	let total = 0 
+	for (let i = 0; i < bitArray.length; i++) {
+		let bit = bitArray[i]
+		if (bit) {
+			total += Math.pow(16, bitArray.length - i - 1)
+		}
+	}
+	return total
+}
+
+function HexToArray(hexString) {
+	let bitArray = []
+	for (i=0; i<hexString.length; i++) {
+		let char = hexString[i]
+		if (hexString)
+	}
+}
+
+function Binarytonumber(Numberb){
+    
 
 }
