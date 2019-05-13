@@ -107,7 +107,12 @@ function HexToArray(hexString) {
 	let bitArray = []
 	for (i=0; i<hexString.length; i++) {
 		let char = hexString[i]
-		if (hexString)
+		let number
+		if (char === "A") {
+			number = 10
+		} else if (char === "B") {
+			
+		}
 	}
 }
 
