@@ -135,7 +135,6 @@ function numbertoBinary(BNumber) {
         i++
     }
     for(let j = startPunkt;j >= 1; j = j/2 ){
-        debugger;
         if(j <= BNumber){
             binery.push(true)
             BNumber -= j
