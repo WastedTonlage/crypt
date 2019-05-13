@@ -13,5 +13,10 @@ function XOREncrypt(plain, key) {
 }
 
 function XORGen () {
-	
+	let length = keyLength
+	let key = []
+	for (i=0; i<length; i++) {
+		key.push(Math.random < 0.5)
+	}
+	return key 
 }
