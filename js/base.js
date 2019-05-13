@@ -145,7 +145,9 @@ function numbertoBinary(BNumber) {
     return binery
 }
 
-
+function RapperBinarytonumber(){
+    $("#Text1").val(Binarytonumber(cipherText))
+}
 
 
 
