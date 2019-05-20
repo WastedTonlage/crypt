@@ -48,7 +48,7 @@
                 </select><br><br>
                 <button id="b3" onclick="genClick()">Genkey</button><br>
                 <select id="sel1">
-                    <option value="Tal">Tal 0-9</option>
+                    <option value="Tal" onclick="RapperBinarytonumber()">Tal 0-9</option>
                     <option value="Binary">Binary 0-1</option>
                     <option value="HRX">HEX #FF</option>
                     <option value="ASCII">ASCII</option>
