@@ -1,6 +1,7 @@
 let algorithms = []
 let cipherText = []
 let plainText = []
+let key = []
 
 
 function encClick() {
@@ -14,6 +15,10 @@ function decClick() {
     $("#Text1").val(algorithms[algo].dec($("#Text2").val(), $("#t4").val()))
 }
 
+function genClick() {
+	let algo = $("input.algoritmer:checked").val()
+    $("#Text1").val(algorithms[algo].dec()	
+}
 
 function renderAlgorithms() {
     console.log("rendering")
@@ -155,6 +160,5 @@ function removeLeadingZeroes(bitArray) {
 		} else {
 			return bitArray.slice(falses)
 		}
-
 	}
 }
